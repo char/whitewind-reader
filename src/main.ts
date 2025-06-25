@@ -1,17 +1,19 @@
 import "https://char.lt/esm/pipe.ts";
 
-import type { Infer, MakeLexiconUniverse } from "@char/lexicon.ts";
-import type { ATProtoUniverse } from "@char/lexicon.ts/atproto";
-import { XRPC } from "@char/lexicon.ts/rpc";
 import * as fs from "@std/fs";
 import { serveFile } from "@std/http/file-server";
 import * as path from "@std/path";
 import vento from "@vento/vento";
 import { marked } from "marked";
-import type WWEntryLexicon from "../lexicons/com/whtwnd/blog/entry.ts";
+
+import type { Infer, MakeLexiconUniverse } from "@char/lexicon.ts";
+import type { ATProtoUniverse } from "@char/lexicon.ts/atproto";
+import { XRPC } from "@char/lexicon.ts/rpc";
+
 import { db } from "./db.ts";
 import { resolveDocument, resolveHandle } from "./identity.ts";
 
+import type WWEntryLexicon from "../lexicons/com/whtwnd/blog/entry.ts";
 type WWUniverse = MakeLexiconUniverse<[typeof WWEntryLexicon]>;
 type WWEntry = Infer<WWUniverse, "com.whtwnd.blog.entry">;
 
