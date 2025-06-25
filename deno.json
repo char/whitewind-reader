@@ -1,0 +1,19 @@
+{
+  "tasks": {
+    "start": "deno serve -A ./src/main.ts"
+  },
+  "imports": {
+    "@atcute/identity": "npm:@atcute/identity@^1.0.3",
+    "@atcute/identity-resolver": "npm:@atcute/identity-resolver@^1.1.3",
+    "@char/justin": "jsr:@char/justin@^0.3.5",
+    "@char/lexicon.ts": "./vendor/lexicon.ts/lib/mod.ts",
+    "@char/lexicon.ts/rpc": "./vendor/lexicon.ts/pkg/rpc/rpc.ts",
+    "@char/lexicon.ts/atproto": "./vendor/lexicon.ts/pkg/atproto-lexica/mod.ts",
+    "@db/sqlite": "jsr:@db/sqlite@^0.12.0",
+    "@std/fs": "jsr:@std/fs@^1.0.18",
+    "@std/http": "jsr:@std/http@^1.0.18",
+    "@std/path": "jsr:@std/path@^1.1.0",
+    "@vento/vento": "jsr:@vento/vento@^1.14.0",
+    "marked": "npm:marked@^15.0.12"
+  }
+}

@@ -1,0 +1,83 @@
+:root {
+  font-family:
+    "Inter", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", "Noto Color Emoji";
+  line-height: 1.778;
+  tab-size: 4;
+  font-size: 1.125rem;
+
+  color-scheme: light;
+  background-color: #f9fafb;
+  color: white;
+}
+
+code,
+kbd {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+main {
+  max-width: 70ch;
+  padding: 1.5rem;
+  margin: 3rem auto;
+  background-color: #ffffff;
+  color: #121a2d;
+  border-radius: 8px;
+}
+
+p {
+  margin: 1.333em 0;
+  color: #334155;
+}
+
+hr {
+  margin: 3.111em;
+  border: 1px solid #e2e8f0;
+}
+
+hr + :is(h1, h2, h3) {
+  margin-top: 0;
+}
+
+h1 {
+  font-size: 1.778em;
+  line-height: 1.333;
+}
+
+h2 {
+  font-size: 1.667em;
+  margin: 1.667em 0;
+  margin-bottom: 1.0667em;
+  line-height: 1.333;
+}
+
+h3 {
+  font-size: 1.333em;
+  margin: 1.667em 0;
+  line-height: 1.333;
+}
+
+blockquote {
+  margin-top: 1.667em;
+  margin-bottom: 1.667em;
+  padding-left: 1em;
+}
+
+main > :is(ul, ol) {
+  margin: 1.333em 0;
+  padding-left: 1.556em;
+  li {
+    padding-left: 0.444em;
+  }
+}
+
+a {
+  color: #0f172a;
+  text-decoration: underline;
+  font-weight: 500;
+}
+
+a:hover {
+  color: #e403af;
+  transition: 0.125s linear color;
+}

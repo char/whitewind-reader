@@ -1,0 +1,3 @@
+[submodule "vendor/lexicon.ts"]
+	path = vendor/lexicon.ts
+	url = https://github.com/char/lexicon.ts.git
